@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import CardWrapper from '../../common/Card'
+import Divider from '../../common/Divider'
 // import Divider from '../../common/Divider'
 import SmallTitle from '../../common/typografy/SmallTitle'
 const RenderCountExample = () => {
@@ -14,6 +15,7 @@ const RenderCountExample = () => {
     return (
         <CardWrapper>
             <SmallTitle>Подсчет количества рендеров</SmallTitle>
+            <Divider/>
             <p>render count: {renderCount.current}</p>
             <button className='btn btn-primary' onClick={toggleOtherState}>жми</button>
         </CardWrapper>

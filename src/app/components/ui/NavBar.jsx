@@ -24,6 +24,24 @@ const NavBar = () => {
                     <NavLink
                         className="nav-link "
                         aria-current="page"
+                        to="/usestate"
+                    >
+                        useState
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink
+                        className="nav-link "
+                        aria-current="page"
+                        to="/useEffect"
+                    >
+                        useEffect
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink
+                        className="nav-link "
+                        aria-current="page"
                         to="/useRef"
                     >
                         useRef
