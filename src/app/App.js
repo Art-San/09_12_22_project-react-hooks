@@ -3,11 +3,12 @@ import { Redirect, Route, Switch } from 'react-router-dom'
 import NavBar from './components/ui/NavBar'
 import Users from './layouts/Users'
 // import Login from './layouts/Login'
+import ContainerWrapper from './components/common/Container'
 import Main from './layouts/Main'
 import UseState from './layouts/UseState'
 import UseEffect from './layouts/UseEffect'
 import UseRefExample from './layouts/UseRef'
-import ContainerWrapper from './components/common/Container'
+import UseMemoExample from './layouts/UseMemo'
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Switch>
                     <Route path="/users/:userId?/:edit?" component={Users} />
                     {/* <Route path="/login/:type?" component={Login} /> */}
+                    <Route path="/useMemo" component={UseMemoExample} />
                     <Route path="/useRef" component={UseRefExample} />
                     <Route path="/useEffect" exact component={UseEffect} />
                     <Route path="/usestate" exact component={UseState} />

@@ -4,6 +4,7 @@ import CollapseWrapper from '../components/common/Collapse'
 import Divider from '../components/common/Divider'
 import Subtitle from '../components/common/typografy/Subtitle'
 import Title from '../components/common/typografy/Title'
+import { ExampleFileInput } from '../components/examples/useRef/ExampleRefRerender'
 import PrevStateExample from '../components/examples/useRef/prevState'
 import ProgrammableActionsExample from '../components/examples/useRef/programmableActions'
 import RenderCountExample from '../components/examples/useRef/renderCount'
@@ -33,6 +34,7 @@ const UseRefExample = () => {
                 <RenderCountExample />
                 <PrevStateExample />
                 <ProgrammableActionsExample />
+                <ExampleFileInput/>
             </div>
             <Divider />
             <div>

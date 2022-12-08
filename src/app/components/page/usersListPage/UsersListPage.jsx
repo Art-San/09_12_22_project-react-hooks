@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Pagination from '../../common/Pagination'
 import api from '../../../api'
 import { paginate } from '../../../utils/paginate'
@@ -9,6 +9,7 @@ import _ from 'lodash'
 import PropTypes from 'prop-types'
 
 const UsersListPage = () => {
+    const inputRef = useRef()
     const [currentPage, setCurrentPage] = useState(1)
     const [profession, setProfession] = useState()
     const [searchQuery, setSearchQuery] = useState('')
@@ -118,10 +119,12 @@ const UsersListPage = () => {
                     <div className="d-flex flex-column">
                         <SearchStatus length={count} />
                         <input
+                            ref={inputRef}
                             type="text"
                             name='searchQuery'
                             placeholder='Search..'
                             onChange={handleSearchQuery}
+                            className='form-control'
                             value={searchQuery}
                         />
                         {count > 0 && (
