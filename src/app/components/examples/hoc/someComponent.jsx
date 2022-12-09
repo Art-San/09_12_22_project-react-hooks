@@ -1,7 +1,7 @@
 import React from 'react'
 
 import PropTypes from 'prop-types'
-import Subtitle from '../../common/typografy/subtitle'
+import Subtitle from '../../common/typografy/Subtitle'
 
 const SomeComponent = ({ name }) => {
     return <Subtitle>{name || 'Component'}</Subtitle>
