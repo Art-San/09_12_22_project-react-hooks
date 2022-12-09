@@ -5,6 +5,7 @@ import BlockQuote from '../components/common/BlockQuote'
 import Title from '../components/common/typografy/Title'
 import Subtitle from '../components/common/typografy/Subtitle'
 import Divider from '../components/common/Divider'
+import ExampleUseMemoFeb from '../components/examples/useMemo/exampleUseMemoFeb'
 const UseMemoExample = () => {
     return (
         <>
@@ -55,6 +56,7 @@ const UseMemoExample = () => {
             <Divider />
             <Subtitle>Examples</Subtitle>
             <ComplexCalculateExample />
+            <ExampleUseMemoFeb/>
         </>
     )
 }
