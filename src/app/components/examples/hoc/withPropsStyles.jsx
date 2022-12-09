@@ -1,4 +1,3 @@
-/* eslint-disable react/display-name */
 import React from 'react'
 import CardWrapper from '../../common/Card'
 
