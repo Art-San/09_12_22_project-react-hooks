@@ -9,6 +9,7 @@ import UseState from './layouts/UseState'
 import UseEffect from './layouts/UseEffect'
 import UseRefExample from './layouts/UseRef'
 import UseMemoExample from './layouts/UseMemo'
+import UseCallbackExample from './layouts/UseCallback'
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Switch>
                     <Route path="/users/:userId?/:edit?" component={Users} />
                     {/* <Route path="/login/:type?" component={Login} /> */}
+                    <Route path="/useCallback" component={UseCallbackExample} />
                     <Route path="/useMemo" component={UseMemoExample} />
                     <Route path="/useRef" component={UseRefExample} />
                     <Route path="/useEffect" exact component={UseEffect} />

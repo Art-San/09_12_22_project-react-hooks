@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import CardWrapper from '../../common/Card'
-import SmallTitle from '../../common/typografy/smallTitle'
+import SmallTitle from '../../common/typografy/SmallTitle'
 
 const UseCallBackExample = () => {
     const [data, setData] = useState({})
