@@ -16,19 +16,23 @@ const ProgrammableActionsExample = () => {
             <SmallTitle className="card-title">
                 Программируемые действия и свойства
             </SmallTitle>
-            <Divider/>
-            <label htmlFor='email' className='form-label'>
+            <Divider />
+            <label htmlFor="email" className="form-label">
                 Мыло
             </label>
             <input
                 ref={inputRef}
                 type="email"
-                className='form-control'
-                id='email' />
-            <button className='btn btn-primary m-2' onClick={handleClick}>
+                className="form-control"
+                id="email"
+            />
+            <button className="btn btn-primary m-2" onClick={handleClick}>
                 Фокус input
             </button>
-            <button className='btn btn-secondary m-2' onClick={handleClickWidth}>
+            <button
+                className="btn btn-secondary m-2"
+                onClick={handleClickWidth}
+            >
                 Изменить ширину объекта
             </button>
         </CardWrapper>

@@ -9,21 +9,25 @@ const Counter = () => {
         // setCount(count + 1) эти два
         // setCount(count + 1) схлопнутся
         setCount((prevState) => prevState + 1)
-        setCount(prevState => prevState + 1)
+        setCount((prevState) => prevState + 1)
         // console.log('count', count)
     }
 
     const handleDecrement = () => {
-        setCount(prevState => prevState - 1)
+        setCount((prevState) => prevState - 1)
     }
 
     return (
         <CardWrapper>
             <SmallTitle>Подсчет количества рендеров</SmallTitle>
-            <Divider/>
+            <Divider />
             <p>count: {count}</p>
-            <button className='btn btn-warning m-1' onClick={handleDecrement}>минус</button>
-            <button className='btn btn-primary m-1' onClick={handeleIncrement}>плюс</button>
+            <button className="btn btn-warning m-1" onClick={handleDecrement}>
+                минус
+            </button>
+            <button className="btn btn-primary m-1" onClick={handeleIncrement}>
+                плюс
+            </button>
         </CardWrapper>
     )
 }

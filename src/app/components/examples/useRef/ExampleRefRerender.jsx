@@ -18,7 +18,11 @@ export const ExampleFileInput = () => {
                 type="file"
                 onChange={() => setIsValueSet(true)}
             />
-            <button className='btn btn-primary' onClick={handleSend} disabled={!isValueSet}>
+            <button
+                className="btn btn-primary"
+                onClick={handleSend}
+                disabled={!isValueSet}
+            >
                 Отправить файл
             </button>
         </div>

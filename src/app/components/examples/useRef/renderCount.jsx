@@ -15,9 +15,11 @@ const RenderCountExample = () => {
     return (
         <CardWrapper>
             <SmallTitle>Подсчет количества рендеров</SmallTitle>
-            <Divider/>
+            <Divider />
             <p>render count: {renderCount.current}</p>
-            <button className='btn btn-primary' onClick={toggleOtherState}>жми</button>
+            <button className="btn btn-primary" onClick={toggleOtherState}>
+                жми
+            </button>
         </CardWrapper>
     )
 }

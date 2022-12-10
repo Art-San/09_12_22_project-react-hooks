@@ -34,7 +34,7 @@ const UseRefExample = () => {
                 <RenderCountExample />
                 <PrevStateExample />
                 <ProgrammableActionsExample />
-                <ExampleFileInput/>
+                <ExampleFileInput />
             </div>
             <Divider />
             <div>

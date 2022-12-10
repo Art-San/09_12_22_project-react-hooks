@@ -74,7 +74,7 @@ const UsersListPage = () => {
                 ? users.filter(
                     (user) =>
                         JSON.stringify(user.profession) ===
-                    JSON.stringify(selectedProf)
+                        JSON.stringify(selectedProf)
                 )
                 : users
 
@@ -121,10 +121,10 @@ const UsersListPage = () => {
                         <input
                             ref={inputRef}
                             type="text"
-                            name='searchQuery'
-                            placeholder='Search..'
+                            name="searchQuery"
+                            placeholder="Search.."
                             onChange={handleSearchQuery}
-                            className='form-control'
+                            className="form-control"
                             value={searchQuery}
                         />
                         {count > 0 && (

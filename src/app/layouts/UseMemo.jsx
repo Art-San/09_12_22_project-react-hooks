@@ -56,7 +56,7 @@ const UseMemoExample = () => {
             <Divider />
             <Subtitle>Examples</Subtitle>
             <ComplexCalculateExample />
-            <ExampleUseMemoFeb/>
+            <ExampleUseMemoFeb />
         </>
     )
 }

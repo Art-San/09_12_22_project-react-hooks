@@ -13,11 +13,10 @@ const UseState = () => {
             <CollapseWrapper>
                 <BlockQuote>
                     <p>
-                        <code>useState</code> возвращает кортеж (массив),
-                        в котором содержится значение
-                        состояния и функция для его изменения.
-                        По соглашению название функции
-                        изменения состояния начинается с <code>set</code>.
+                        <code>useState</code> возвращает кортеж (массив), в
+                        котором содержится значение состояния и функция для его
+                        изменения. По соглашению название функции изменения
+                        состояния начинается с <code>set</code>.
                     </p>
 
                     <figcaption className="blockquote-footer">
@@ -28,7 +27,7 @@ const UseState = () => {
             <Divider />
             <div>
                 <Subtitle>Примеры</Subtitle>
-                <Counter/>
+                <Counter />
                 {/* <PrevStateExample /> */}
                 {/* <ProgrammableActionsExample /> */}
             </div>

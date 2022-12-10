@@ -5,7 +5,7 @@ import SmallTitle from '../../common/typografy/SmallTitle'
 const RenderCountExample2 = () => {
     const [renderCount, setRenderCount] = useState(0)
     useEffect(() => {
-        setRenderCount(prevState => prevState + 1)
+        setRenderCount((prevState) => prevState + 1)
     }, [])
     const handleRender = () => {
         console.log('someRef')
@@ -14,7 +14,9 @@ const RenderCountExample2 = () => {
         <CardWrapper>
             <SmallTitle>Подсчет количества рендеров</SmallTitle>
             <p>render count: {renderCount}</p>
-            <button className='btn btn-primary m-2' onClick={handleRender}>;vb</button>
+            <button className="btn btn-primary m-2" onClick={handleRender}>
+                ;vb
+            </button>
         </CardWrapper>
     )
 }

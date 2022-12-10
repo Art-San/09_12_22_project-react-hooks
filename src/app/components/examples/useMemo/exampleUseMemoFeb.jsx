@@ -30,12 +30,14 @@ const ExampleUseMemoFeb = () => {
             <div>
                 <button
                     className="btn btn-primary mx-2"
-                    onClick={() => setValue((v) => v + 1000)}>
+                    onClick={() => setValue((v) => v + 1000)}
+                >
                     Increment
                 </button>
                 <button
                     className="btn btn-primary mx-2"
-                    onClick={() => setValue((v) => v - 1000)}>
+                    onClick={() => setValue((v) => v - 1000)}
+                >
                     dDecrement
                 </button>
             </div>
@@ -43,8 +45,9 @@ const ExampleUseMemoFeb = () => {
                 {anotherState}
                 <p>
                     <button
-                        className='btn btn-warning m-1'
-                        onClick={() => setAnotherState((p) => p + 1)}>
+                        className="btn btn-warning m-1"
+                        onClick={() => setAnotherState((p) => p + 1)}
+                    >
                         Обновить
                     </button>
                 </p>

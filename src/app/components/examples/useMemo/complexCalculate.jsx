@@ -27,20 +27,22 @@ const ComplexCalculateExample = () => {
                 <p>Result fact: {fact}</p>
                 <button
                     className="btn btn-primary mx-2"
-                    onClick={() => setValue(prevState => prevState + 10)}>
-                        increment
+                    onClick={() => setValue((prevState) => prevState + 10)}
+                >
+                    increment
                 </button>
                 <button
                     className="btn btn-primary mx-2"
-                    onClick={() => setValue(prevState => prevState - 10)}>
-                        decrement
+                    onClick={() => setValue((prevState) => prevState - 10)}
+                >
+                    decrement
                 </button>
             </CardWrapper>
             <CardWrapper>
                 <SmallTitle>Зависимость от сторонних setState</SmallTitle>
                 <button
                     className={'btn ms-md-2 btn-' + buttonColor}
-                    onClick={() => setOtherState(prevState => !prevState)}
+                    onClick={() => setOtherState((prevState) => !prevState)}
                 >
                     жми, но не сильно
                 </button>

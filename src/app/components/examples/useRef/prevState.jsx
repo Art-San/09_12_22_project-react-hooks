@@ -6,9 +6,7 @@ const PrevStateExample = () => {
     const prevState = useRef('')
     const [otherState, setOtherState] = useState('false')
     const toggleOtherState = () => {
-        setOtherState((prevState) =>
-            prevState === 'false' ? 'true' : 'false'
-        )
+        setOtherState((prevState) => (prevState === 'false' ? 'true' : 'false'))
     }
     useEffect(() => {
         prevState.current = otherState
@@ -18,7 +16,9 @@ const PrevStateExample = () => {
             <SmallTitle>Предыдущее состояние</SmallTitle>
             <p>prev State: {prevState.current}</p>
             <p>Corrent State: {otherState}</p>
-            <button className='btn btn-primary' onClick={toggleOtherState}>жми</button>
+            <button className="btn btn-primary" onClick={toggleOtherState}>
+                жми
+            </button>
         </CardWrapper>
     )
 }
