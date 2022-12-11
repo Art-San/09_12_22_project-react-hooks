@@ -12,6 +12,7 @@ import UseMemoExample from './layouts/UseMemo'
 import UseCallbackExample from './layouts/UseCallback'
 import HOCLayout from './layouts/Hoc'
 import MemoExample from './layouts/Memo'
+import CloneElement from './layouts/CloneElement'
 
 function App() {
     return (
@@ -21,6 +22,8 @@ function App() {
                 <Switch>
                     <Route path="/users/:userId?/:edit?" component={Users} />
                     {/* <Route path="/login/:type?" component={Login} /> */}
+                    <Route path="/cloneElement" component={CloneElement}
+                    />
                     <Route path="/memo" component={MemoExample} />
                     <Route path="/hoc" component={HOCLayout} />
                     <Route path="/useCallback" component={UseCallbackExample} />
