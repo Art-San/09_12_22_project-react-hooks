@@ -31,6 +31,7 @@ const HOCLayout = () => {
                 </BlockQuoteWrapper>
             </Collapse>
             <CardWrapper>
+                <p>Если Еслинт будет ругатся то нужно добавит это</p>
                 <i className="bi bi-lightbulb"></i> add{' '}
                 <code>&quot;react/display-name&quot;: &quot;off&quot;</code> to
                 EsLint rules
