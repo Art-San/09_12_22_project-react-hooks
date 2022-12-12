@@ -1,5 +1,5 @@
 import React from 'react'
-import CollapseWrapper from '../common/collapse'
+import CollapseWrapper from '../common/Collapse'
 const ChildrenExercise = () => {
     return (
         <CollapseWrapper title="Упражнение">
