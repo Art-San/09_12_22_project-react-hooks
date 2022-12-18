@@ -22,6 +22,7 @@ const EditUserPage = () => {
     }
 
     const handleSubmit = (data) => {
+        console.log('data', data)
         const { profession } = data
         api.users
             .update(userId, {
