@@ -5,11 +5,12 @@ import BlockQuote from '../components/common/BlockQuote'
 import Divider from '../components/common/Divider'
 import Subtitle from '../components/common/typografy/Subtitle'
 import Counter from '../components/examples/useState/Counter'
+import Count from '../components/examples/useState/Count'
 import Click from '../components/examples/useState/Click'
 import ExampleBad from '../components/examples/useState/ExampleBad'
 import ExampleColor from '../components/examples/useState/ExampleColor'
 import Example4 from '../components/examples/useState/Example4'
-
+// hhhh
 const UseState = () => {
     return (
         <>
@@ -32,10 +33,11 @@ const UseState = () => {
             <div>
                 <Subtitle>Примеры</Subtitle>
                 <Counter />
-                <Click/>
-                <ExampleBad/>
-                <ExampleColor/>
-                <Example4/>
+                <Count />
+                <Click />
+                <ExampleBad />
+                <ExampleColor />
+                <Example4 />
                 {/* <PrevStateExample /> */}
                 {/* <ProgrammableActionsExample /> */}
             </div>
